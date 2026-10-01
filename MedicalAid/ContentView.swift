@@ -9,12 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "heart")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, Valerie!")
+        ZStack{
+            Color.pink
+            VStack {
+                Image(systemName: "heart")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, Valerie!")
+                
+            }
         }
+        
+        
         .padding()
     }
 }
